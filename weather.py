@@ -1,7 +1,5 @@
 import sys, pyperclip, bs4, requests
 
-
-
 def get_weather(city):
     url = f'http://www.skaikairos.gr/main/{city}/position'
 
@@ -39,14 +37,13 @@ def get_weather(city):
         return f'There are no weather data for {city}'
 
 if len(sys.argv) > 1:
-    # Get address from command line.
+    # Get city from command line.
     city = ' '.join(sys.argv[1:])
     response = get_weather(city)
     print(response)
     input('Press ENTER to exit')
 else:
-    # Get address from clipboard.
-
+    # Get city from clipboard.
     city = pyperclip.paste()
     response = get_weather(city)
     print(response)
