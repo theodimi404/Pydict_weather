@@ -4,7 +4,7 @@
 
 The data are from skaikairos.gr.
 
-It uses a city of choice as an argument or if none provided, it takes the content of a clipboard as an argument.
+It uses a city of choice as an argument or if none provided, it takes the content of the clipboard as an argument.
 
 ## License 
 
